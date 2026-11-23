@@ -1,6 +1,6 @@
-def count_word(text: str) -> None:
+def count_word(text: str) -> int:
     words = text.split()
-    print(f"Found {len(words)} total words")
+    return len(words)
 
 def count_char(text: str) -> dict[str, int]:
     count_dict = {}
@@ -21,3 +21,4 @@ def chars_dict_to_sorted_list(d: dict[str, int]) -> list[tuple[str, int]]:
 
     sorted_list = sorted(temp_list, reverse=True, key=sort_on)
     return sorted_list
+
